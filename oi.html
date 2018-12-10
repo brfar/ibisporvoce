@@ -25,6 +25,7 @@
     <a class="item"><img src="img/ibislogo.png"></a>
 
     <div class="right menu">
+
       <div class="ui dropdown item">
         <i class="globe icon"></i> Português <i class="dropdown icon"></i>
         <div class="menu">
@@ -32,24 +33,41 @@
           <a class="item">Español</a>
         </div>
       </div>
+
       <div class="item">
-        <i class="bars icon"></i>
+        <div class="ui right vertical inverted sidebar icon menu">
+          <a href="#" class="item">Restaurante</a>
+          <a href="#" class="item">Bar</a>
+          <a href="#" class="item">Nota Fiscal</a>
+          <a href="#" class="item">Seu Apartamento </a>
+          <a href="#" class="item">Fale Conosco</a>
+        </div>
+
+        <i class="content icon menu-opener"></i>
+        <p class="menu-opener">Menu</p>
       </div>
+
+
+
+
     </div>
   </div>
   <!-- fim do menu -->
 
   <div class="container">
     <div class="flex-items">
-      <h1>Lorem!</h1>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam non repellat distinctio ducimus eaque
-        reiciendis earum, vero eum sequi reprehenderit consequatur unde, nam quia temporibus sint harum voluptates!
-        Pariatur, voluptatibus!</p>
+      <h1>Lorem ipsum!</h1>
+      <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam non repellat distinctio ducimus eaque
+        reiciendis earum, vero eum sequi reprehenderit consequatur unde, nam quia temporibus sint harum voluptates!</h4>
       <button class="large ui inverted button">Vamos Começar!</button>
     </div>
   </div>
 
   <script>
+    $('.menu-opener').click(function () {
+      $('.sidebar').sidebar('show')
+    });
+
     $('.ui.dropdown.item').dropdown();
   </script>
 </body>
