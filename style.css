@@ -58,6 +58,17 @@
     justify-content: center;
 }
 
-.header h2, p {
+div.restaurante p, h2 {
   color: white;
+}
+
+div.menuRest {
+  background-color: yellowgreen;
+  overflow: auto;
+	white-space: nowrap;
+	padding: 10px;
+}
+
+div.menuRest a {
+	margin-right: 10px;
 }
