@@ -58,17 +58,40 @@
     justify-content: center;
 }
 
+.notafiscal {
+	margin-top: 50px;
+	background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)),
+		url(img/entrada.jpg) center;
+	background-size: 100%;
+	height: 25vh;
+  /* background-size: 100vh; */
+  text-align: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
 div.restaurante p, h2 {
   color: white;
 }
 
+div.notafiscal p, h2 {
+  color: white;
+}
+
 div.menuRest {
-  background-color: yellowgreen;
 	padding: 15px;
 	white-space: nowrap; /* [1] */
   overflow-x: auto; /* [2] */
   -webkit-overflow-scrolling: touch; /* [3] */
   -ms-overflow-style: -ms-autohiding-scrollbar; [4]
+}
+
+div.menuRest a {
+	color: rgb(150, 150, 150)
 }
 
 div.menuRest::-webkit-scrollbar {
@@ -80,18 +103,19 @@ div.menuRest a {
 
 div.pratos {
 	background: white;
+	margin: 0 5%;
 }
 
 div.prato img {
 	width: 30%;
 	height: 30%;
 	float: right;
+	margin: 0 0 10px 10px;
 }
 
-/* div.prato {
-	display: flex;
-	flex-wrap: wrap;
-} */
+div.prato h4 {
+	margin-top: 10px;
+}
 
 div.text {
 	max-width: 60%;
@@ -104,4 +128,24 @@ div.price h4 {
 
 div.price {
 	display: flex;
+	margin-bottom: 50px;
+}
+
+div.nf img {
+	width: 90%;
+	text-align: center;
+}
+
+div.nf {
+	margin: 20px;
+	text-align: center;
+}
+
+div.nf h2 {
+	color: red;
+	margin-bottom: 0;
+}
+
+div.nf h3 {
+	margin-top: 0;
 }
