@@ -64,11 +64,44 @@ div.restaurante p, h2 {
 
 div.menuRest {
   background-color: yellowgreen;
-  overflow: auto;
-	white-space: nowrap;
-	padding: 10px;
+	padding: 15px;
+	white-space: nowrap; /* [1] */
+  overflow-x: auto; /* [2] */
+  -webkit-overflow-scrolling: touch; /* [3] */
+  -ms-overflow-style: -ms-autohiding-scrollbar; [4]
 }
+
+div.menuRest::-webkit-scrollbar {
+  display: none; }
 
 div.menuRest a {
 	margin-right: 10px;
+}
+
+div.pratos {
+	background: white;
+}
+
+div.prato img {
+	width: 30%;
+	height: 30%;
+	float: right;
+}
+
+/* div.prato {
+	display: flex;
+	flex-wrap: wrap;
+} */
+
+div.text {
+	max-width: 60%;
+}
+
+div.price h4 {
+	margin-right: 10px;
+	margin: 20px 20px 0 0 ;
+}
+
+div.price {
+	display: flex;
 }
