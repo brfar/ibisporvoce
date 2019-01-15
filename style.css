@@ -92,6 +92,7 @@ div.notafiscal p, h2 {
 }
 
 div.menuRest {
+	background-color: ghostwhite;
 	padding: 15px;
 	white-space: nowrap; /* [1] */
   overflow-x: auto; /* [2] */
@@ -193,9 +194,4 @@ div.index-rodape {
 
 html {
   scroll-behavior: smooth;
- }
-
- div.pratos img {
-	 width: 50px;
-	 height: 50px;
  }
