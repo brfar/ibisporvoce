@@ -92,7 +92,7 @@ div.notafiscal p, h2 {
 }
 
 div.menuRest {
-	background-color: yellow;
+	background-color: ghostwhite;
 	padding: 15px;
 	white-space: nowrap; /* [1] */
   overflow-x: auto; /* [2] */
