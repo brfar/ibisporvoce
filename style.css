@@ -102,11 +102,17 @@ div.menuRest {
 	-webkit-overflow-scrolling: touch;
 	/* [3] */
 	-ms-overflow-style: -ms-autohiding-scrollbar;
-	[4]
+	/* [4] */
 }
 
 div.menuRest a {
 	color: rgb(150, 150, 150)
+}
+
+div.menuRest a:active {
+	color: rgb(150, 150, 150);
+	font-weight: bold;
+	border-bottom: 2px solid red;
 }
 
 div.menuRest::-webkit-scrollbar {
