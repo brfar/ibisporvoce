@@ -212,14 +212,14 @@ div#index-items a {
 }
 
 div.index-rodape {
-	background-color:#eaeaea;
+	background-color: #eaeaea;
 	padding: 25px;
 	color: #5a5a5a;
 }
 
-html {
+/* html {
 	scroll-behavior: smooth;
-}
+} */
 
 div.card {
 	color: #909090;
@@ -229,5 +229,21 @@ div.card {
 }
 
 div.card img {
-	width:40%;
+	width: 40%;
+}
+
+/* 
+div.pratos h1::before {
+  display: block; 
+  content: " "; 
+  margin-top: -100px; 
+  height: 100px; 
+  visibility: hidden; 
+  pointer-events: none;
+} */
+
+:target {
+	padding-top: 100px;
+	margin-top: -100px;
+	display: inline-block;
 }

@@ -5,20 +5,12 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>Document</title>
+	<title>#ibisporvoce</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
 	<link rel="stylesheet" href="style.css" />
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 
-	<!--
-			<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-			<script
-			  src="https://code.jquery.com/jquery-3.1.1.min.js"
-			  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-			  crossorigin="anonymous"></script>
-			<script src="semantic/dist/semantic.min.js"></script>
-		-->
 </head>
 
 <body>
@@ -54,18 +46,21 @@
 	<div class="header">
 		<div class="restaurante">
 			<h2>Restaurante</h2>
-			<p>Horário de Funcionamento:<br>
-				Café da manhã - 4h às 10h - R$ 25.00<br>
+			<p>Café da manhã - 4h às 10h - R$ 25.00<br>
 				Almoço: 12h às 14:30h<br>
 				Janta: 19h às 22:30h</p>
 		</div>
 	</div>
 
 	<div class="menuRest">
-		<a href="#saladas">Saladas</a> <a href="#panelas">Nossas Panelas</a>
-		<a href="#gratinados">Gratinados</a> <a href="#classicos">Clássicos</a>
-		<a href="#telhas">Nossas Telhas</a> <a href="#kids">Para Crianças</a>
-		<a href="#acompanhamentos">Acompanhamentos</a> <a href="#petiscos">Petiscos</a>
+		<a href="#saladas">Saladas</a> 
+		<a href="#panelas">Panelas</a>
+		<a href="#gratinados">Gratinados</a> 
+		<a href="#classicos">Clássicos</a>
+		<a href="#telhas">Telhas</a> 
+		<a href="#kids">Crianças</a>
+		<a href="#acompanhamentos">Acompanhamentos</a> 
+		<a href="#petiscos">Petiscos</a>
 	</div>
 
 	<!-- SALADA CAESAR COM CAMARÃO OU FRANGO -->
@@ -169,6 +164,7 @@
 		</div>
 
 		<div id="gratinados">
+			<h1>GRATINADOS</h1>
 			<!-- FILÉ DE PEIXE GRATINADO -->
 			<div class="prato">
 				<img src="" alt="">
@@ -206,6 +202,7 @@
 		</div>
 
 		<div id="classicos">
+			<h1>CLÁSSICOS</h1>
 			<!-- FILÉ MIGNON COM LÂMINAS DE ALHO -->
 			<div class="prato">
 				<img src="" alt="">
@@ -285,6 +282,7 @@
 		</div>
 
 		<div id="telhas">
+			<h1>TELHAS</h1>
 			<!-- COSTELA SUÍNA COM BAIÃO DE DOIS -->
 			<div class="prato">
 				<img src="" alt="">
@@ -379,7 +377,7 @@
 			var currentScroll = $(window).scrollTop();
 			if (currentScroll >= fixmeTop - 50) {
 				$('.menuRest').css({
-					position: 'sticky',
+					position: 'fixed',
 					top: '50px',
 					left: '0',
 					'z-index': '1'
@@ -403,7 +401,6 @@
 
 					// Store hash
 					var hash = this.hash;
-
 					// Using jQuery's animate() method to add smooth page scroll
 					// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
 					$('html, body').animate({
