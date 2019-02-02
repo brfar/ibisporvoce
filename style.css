@@ -8,17 +8,16 @@
 	color: white;
 	position: fixed;
 
-	background: #3a6186; /* fallback for old browsers */
-	background: -webkit-linear-gradient(
-		to bottom,
+	background: #3a6186;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom,
 		#89253e,
-		#3a6186
-	); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(
-		to bottom,
+		#3a6186);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom,
 		#89253e,
-		#3a6186
-	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		#3a6186);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .container::before {
@@ -48,14 +47,14 @@
 		url(img/restaurante.jpg) center;
 	background-size: 100%;
 	height: 25vh;
-  /* background-size: 100vh; */
-  text-align: center;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
+	/* background-size: 100vh; */
+	text-align: center;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
 }
 
 .notafiscal {
@@ -64,14 +63,14 @@
 		url(img/entrada.jpg) center;
 	background-size: 100%;
 	height: 25vh;
-  /* background-size: 100vh; */
-  text-align: center;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
+	/* background-size: 100vh; */
+	text-align: center;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
 }
 
 div.flex-items h4 {
@@ -80,24 +79,30 @@ div.flex-items h4 {
 
 div.teste {
 	background-color: red;
-	
+
 }
 
-div.restaurante p, h2 {
-  color: white;
+div.restaurante p,
+h2 {
+	color: white;
 }
 
-div.notafiscal p, h2 {
-  color: white;
+div.notafiscal p,
+h2 {
+	color: white;
 }
 
 div.menuRest {
 	background-color: ghostwhite;
 	padding: 15px;
-	white-space: nowrap; /* [1] */
-  overflow-x: auto; /* [2] */
-  -webkit-overflow-scrolling: touch; /* [3] */
-  -ms-overflow-style: -ms-autohiding-scrollbar; [4]
+	white-space: nowrap;
+	/* [1] */
+	overflow-x: auto;
+	/* [2] */
+	-webkit-overflow-scrolling: touch;
+	/* [3] */
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	[4]
 }
 
 div.menuRest a {
@@ -105,7 +110,8 @@ div.menuRest a {
 }
 
 div.menuRest::-webkit-scrollbar {
-  display: none; }
+	display: none;
+}
 
 div.menuRest a {
 	margin-right: 10px;
@@ -133,7 +139,7 @@ div.text {
 
 div.price h4 {
 	margin-right: 10px;
-	margin: 20px 20px 0 0 ;
+	margin: 20px 20px 0 0;
 }
 
 div.price {
@@ -184,14 +190,38 @@ div.index-inicio h4 {
 	margin: 20px;
 }
 
-div.index-items {
-	background-color: chartreuse;
+div#index-items {
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+div#index-items h2 {
+	color: black;
+}
+
+div#index-items a {
+	text-decoration: none;
+	color: inherit;
 }
 
 div.index-rodape {
-	background-color: tomato;
+	background-color:#C00D0D;
+	padding: 25px;
+	color: #efefef;
 }
 
 html {
-  scroll-behavior: smooth;
- }
+	scroll-behavior: smooth;
+}
+
+div.card {
+	color: #909090;
+	margin: 20px;
+	width: 40%;
+	text-align: center;
+}
+
+div.card img {
+	width:40%;
+}
