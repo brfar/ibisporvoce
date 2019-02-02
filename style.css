@@ -179,7 +179,7 @@ div.index-inicio {
 	align-items: center;
 	justify-content: center;
 	color: white;
-	height: 100vh;
+	height: 95vh;
 	text-align: center;
 
 	background-image: url(img/ibislobbyy.jpg);
@@ -206,9 +206,9 @@ div#index-items a {
 }
 
 div.index-rodape {
-	background-color:#C00D0D;
+	background-color:#eaeaea;
 	padding: 25px;
-	color: #efefef;
+	color: #5a5a5a;
 }
 
 html {
