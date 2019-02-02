@@ -49,6 +49,7 @@
 			<p>Café da manhã - 4h às 10h - R$ 25.00<br>
 				Almoço: 12h às 14:30h<br>
 				Janta: 19h às 22:30h</p>
+				<p>TESTE!!!!!!!!!!!!!!</p>
 		</div>
 	</div>
 
@@ -67,7 +68,7 @@
 	<div class="pratos">
 
 		<div id="saladas">
-			<h1>SALADAS</h1>
+			<h1 id="my-anchor-1">SALADAS</h1>
 			<!-- SALADA CAESAR COM CAMARÃO OU FRANGO -->
 			<div class="prato">
 				<img src="img/salada-caesar-receitas.jpg" alt="" />
@@ -113,7 +114,7 @@
 		</div>
 
 		<div id="panelas">
-			<h1 class="anchor">PANELAS</h1>
+			<h1  id="my-anchor-2">PANELAS</h1>
 			<!-- MOQUECA DE PEIXE -->
 			<div class="prato">
 				<img src="" alt="">
@@ -164,7 +165,7 @@
 		</div>
 
 		<div id="gratinados">
-			<h1 class="anchor">GRATINADOS</h1>
+			<h1 id="my-anchor-3">GRATINADOS</h1>
 			<!-- FILÉ DE PEIXE GRATINADO -->
 			<div class="prato">
 				<img src="" alt="">
@@ -202,7 +203,7 @@
 		</div>
 
 		<div id="classicos">
-			<h1 class="anchor">CLÁSSICOS</h1>
+			<h1 id="my-anchor-4">CLÁSSICOS</h1>
 			<!-- FILÉ MIGNON COM LÂMINAS DE ALHO -->
 			<div class="prato">
 				<img src="" alt="">
@@ -282,7 +283,7 @@
 		</div>
 
 		<div id="telhas">
-			<h1 class="anchor">TELHAS</h1>
+			<h1 id="my-anchor-5">TELHAS</h1>
 			<!-- COSTELA SUÍNA COM BAIÃO DE DOIS -->
 			<div class="prato">
 				<img src="" alt="">
@@ -415,10 +416,10 @@
 		// });
 
 		$(".anchor-link").click(function() {
-    var headerHeight = 100;
+    var headerHeight = 110;
     $('html, body').stop(true, true).animate({
         scrollTop: $(this.hash).offset().top - headerHeight
-    }, 750);
+    }, 800);
     return false;
 });
 	</script>
