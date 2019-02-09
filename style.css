@@ -231,3 +231,21 @@ div.index-rodape {
 	color:inherit;
   text-decoration: none;
 }
+
+#endereco, #tel {
+	display: flex;
+	align-items: center;
+}
+
+#endereco h4 {
+	margin: 0 10px 10px 10px;
+}
+
+#tel h4 {
+	margin: 0 10px 10px 10px;
+}
+
+.index-rodape a {
+	color:inherit;
+  text-decoration: none;
+}
