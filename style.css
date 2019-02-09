@@ -196,21 +196,6 @@ div.index-inicio h4 {
 	margin: 20px;
 }
 
-div#index-items {
-	background-color: white;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-div#index-items h2 {
-	color: black;
-}
-
-div#index-items a {
-	text-decoration: none;
-	color: inherit;
-}
-
 div.index-rodape {
 	background-color: #eaeaea;
 	padding: 25px;
@@ -221,14 +206,22 @@ div.index-rodape {
 	scroll-behavior: smooth;
 } */
 
-div.card {
-	color: #909090;
+#index-items {
+}
+
+#index-items img {
+	width: 15%;
+	height: 15%;
+}
+
+#item-rest, #item-bar, #item-nf, #item-apto {
+	display: flex;
+	align-items: center;
 	margin: 20px;
-	width: 40%;
-	text-align: center;
 }
 
-div.card img {
-	width: 40%;
+#index-items .flex {
+	display: flex;
+	flex-direction: column;
+	margin: 0 20px;
 }
-
