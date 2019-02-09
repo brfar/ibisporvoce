@@ -237,12 +237,12 @@ div.index-rodape {
 	align-items: center;
 }
 
-#endereco h4 {
+#endereco h5 {
 	margin: 0 10px 10px 10px;
 }
 
-#tel h4 {
-	margin: 0 10px 10px 10px;
+#tel h5 {
+	margin: 0;
 }
 
 .index-rodape a {
