@@ -71,6 +71,7 @@
 	align-content: center;
 	align-items: center;
 	justify-content: center;
+	padding: 25px;
 }
 
 div.flex-items h4 {
@@ -224,4 +225,9 @@ div.index-rodape {
 	display: flex;
 	flex-direction: column;
 	margin: 0 20px;
+}
+
+#index-items a {
+	color:inherit;
+  text-decoration: none;
 }
