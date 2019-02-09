@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="style.css" />
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+	<script src="img/jquery.sticky.js"></script>
 
 </head>
 
@@ -19,7 +20,7 @@
 		<a href="index.html" class="item"><img src="img/ibislogo.png" /></a>
 
 		<div class="right menu">
-			<div class="ui dropdown item">
+			<div class="ui disabled dropdown item">
 				<i class="globe icon"></i> Português <i class="dropdown icon"></i>
 				<div class="menu">
 					<a class="item">English</a> <a class="item">Español</a>
@@ -49,7 +50,7 @@
 			<p>Café da manhã - 4h às 10h - R$ 25.00<br>
 				Almoço: 12h às 14:30h<br>
 				Janta: 19h às 22:30h</p>
-				<p>TESTE!!!!!!!!!!!!!!</p>
+			<p>TESTE!!!!!!!!!!!!!!</p>
 		</div>
 	</div>
 
@@ -114,7 +115,7 @@
 		</div>
 
 		<div id="panelas">
-			<h1  id="my-anchor-2">PANELAS</h1>
+			<h1 id="my-anchor-2">PANELAS</h1>
 			<!-- MOQUECA DE PEIXE -->
 			<div class="prato">
 				<img src="" alt="">
@@ -373,55 +374,11 @@
 
 		$('.ui.dropdown.item').dropdown();
 
-		var fixmeTop = $('.menuRest').offset().top;
-		$(window).scroll(function () {
-			var currentScroll = $(window).scrollTop();
-			if (currentScroll >= fixmeTop - 50) {
-				$('.menuRest').css({
-					position: 'fixed',
-					top: '50px',
-					left: '0',
-					'z-index': '1'
-				});
-			} else {
-				$('.menuRest').css({
-					position: 'static'
-				});
-			}
+		$(document).ready(function () {
+			$(".menuRest").sticky({
+				topSpacing: 50
+			});
 		});
-
-
-		// $(document).ready(function () {
-		// 	// Add smooth scrolling to all links
-		// 	$("a").on('click', function (event) {
-
-		// 		// Make sure this.hash has a value before overriding default behavior
-		// 		if (this.hash !== "") {
-		// 			// Prevent default anchor click behavior
-		// 			event.preventDefault();
-
-		// 			// Store hash
-		// 			var hash = this.hash;
-		// 			// Using jQuery's animate() method to add smooth page scroll
-		// 			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-		// 			$('html, body').animate({
-		// 				scrollTop: $(hash).offset().top
-		// 			}, 800, function () {
-
-		// 				// Add hash (#) to URL when done scrolling (default click behavior)
-		// 				window.location.hash = hash;
-		// 			});
-		// 		} // End if
-		// 	});
-		// });
-
-		$(".anchor-link").click(function() {
-    var headerHeight = 110;
-    $('html, body').stop(true, true).animate({
-        scrollTop: $(this.hash).offset().top - headerHeight
-    }, 800);
-    return false;
-});
 	</script>
 </body>
 
